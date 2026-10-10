@@ -93,7 +93,9 @@ EDGE_HOSTS = [
 ]
 
 # 优选 API 地址配置 (支持逗号分隔多个，可配置在 GitHub Action Secret / Env 中)
-OPTIMAL_API = os.environ.get("OPTIMAL_API", "https://cf.090227.xyz/ct?ips=6&port=443")
+# 修改第 96 行
+OPTIMAL_API = os.environ.get("OPTIMAL_API", "https://cf.090227.xyz/ct?ips=6&port=443,https://cf.090227.xyz/cmcc?ips=8&port=443,https://cf.090227.xyz/cu?port=443")
+
 
 NODES_URL = os.environ.get("NODES_URL", "https://youyibing51-tech.github.io/gate/nodes.txt")
 
